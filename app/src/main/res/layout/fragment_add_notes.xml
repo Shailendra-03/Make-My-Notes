@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAddNotesFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AddNotesFragment">
+
+    <LinearLayout
+        android:id="@+id/llToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvToolBarTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:text="Add Notes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:id="@+id/spColors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/ibSave"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_done"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:hint="Title..."
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:hint="Enter Your Content..."
+        android:gravity="start|top"/>
+
+
+</LinearLayout>

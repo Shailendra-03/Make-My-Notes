@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Make My Notes</string>
+
+    <string-array name="note_order_list">
+        <item>Date</item>
+        <item>Title</item>
+        <item>Color</item>
+    </string-array>
+
+    <string-array name="notes_order_type">
+        <item>Descending</item>
+        <item>Ascending</item>
+    </string-array>
+</resources>
